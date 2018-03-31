@@ -20,7 +20,8 @@ body {
 }
 
 #container {
-  height: 500px;
+  overflow: hidden;
+  height: 600px;
   background-color: #FFF;
   width: 80%;
   margin-top: 40px;
@@ -130,8 +131,45 @@ h3 {
 footer {
   background-color: #333;
   height: 40px;
-  position:absolute;
-  bottom:0;
+  position: fixed;
+  bottom: 0;
   width:100%;
+  color: #bbb;
+  font-family: 'Arial', sans-serif;
+  font-size: 10px;
+  padding-left: 50px;
+  padding-top: 10px;
 
+}
+
+@media only screen and (max-width: 700px) {
+  body {
+    background-color: none;
+  }
+
+
+
+  #container {
+    height: 1000px;
+    margin-bottom: 100px;
+  }
+
+  #blogForm {
+    width: 100%;
+    padding: 10px;
+
+    margin-left: 10px;
+    float: left;
+    box-sizing: border-box;
+
+  }
+
+  #displayEntry {
+    width: 100%;
+    float: left;
+    padding-left: 20px;
+    box-sizing: border-box;
+    border-radius: 7px;
+    border: #FFF solid 2px;
+  }
 }
